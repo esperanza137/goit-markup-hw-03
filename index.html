@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/modern-normalize.css" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet" />
-    <link href="./css/modern-normalize.css" rel="normalizer"/>
-    <!-- $ npm install modern-normalize -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,58 +15,61 @@
     <title>WebStudio</title>
   </head>
   <body>
+    <container class="container">
     <header>
-      <a class="logo-link" href="index.html"
+      <section class="header">
+        <a class="logo-link" href="index.html"
         ><span class="logo"><span class="logo-web">Web</span>Studio</span></a
       >
       <nav>
-        <ul>
+        <ul class="header-navigation">
           <li><a class="header-navigation" href="index.html">Agencja</a></li>
-          <li><a class="header-navigation" href="portfolio.html">Portfolio</a></li>
+          <li><a class="header-navigation portfolio" href="portfolio.html">Portfolio</a></li>
           <li><a class="header-navigation" href="#">Kontakt</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a class="top-mail-tel" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="top-mail-tel" href="tel:+48111111111">+48 111 111 111</a></li>
+      <ul class="top-mail-tel">
+        <li><a class="top-mail-tel mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="top-mail-tel tel" href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
+    </section>
     </header>
     <main>
       <section class="title">
         <h1 class="main-title">
-          EFEKTYWNE ROZWIĄZANIA <br />
+          EFEKTYWNE ROZWIĄZANIA
           DLA WASZEGO BIZNESU
         </h1>
         <button class="order" type="button">Zamów usługe</button>
       </section>
       <section>
-        <h2 class="secondary-title">Opis</h2>
-        <ul>
-          <li><h3 class="third-title">LOREM IPSUM</h3></li>
-          <li class="description">
+        <h2>Opis</h2>
+        <ul class="container-description">
+          <li class="third-title"><h3>LOREM IPSUM</h3>
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
             sodales dui. Interdum et malesuada
-          </li>
-          <li><h3 class="third-title">LOREM IPSUM</h3></li>
-          <li class="description">
+          </p></li>
+          <li class="third-title"><h3>LOREM IPSUM</h3>
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
             sodales dui. Interdum et malesuada
-          </li>
-          <li><h3 class="third-title">LOREM IPSUM</h3></li>
-          <li class="description">
+          </p></li>
+          <li class="third-title"><h3>LOREM IPSUM</h3>
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
             sodales dui. Interdum et malesuada
-          </li>
-          <li><h3 class="third-title">LOREM IPSUM</h3></li>
-          <li class="description">
+          </p></li>
+          <li class="third-title"><h3>LOREM IPSUM</h3>
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
             sodales dui. Interdum et malesuada
-          </li>
+          </p></li>
         </ul>
       </section>
       <section>
-        <h2>Czym się zajmujemy</h2>
-        <ul>
+        <h2 class="secondary-title">Czym się zajmujemy</h2>
+        <ul class="container-images">
           <li>
             <img
               src="images/img_1.jpg"
@@ -90,8 +92,8 @@
         </ul>
       </section>
       <section>
-        <h2>Nasz zespół</h2>
-        <ul>
+        <h2 class="secondary-title">Nasz zespół</h2>
+        <ul class="container-our-team">
           <li>
             <img src="images/img_4.jpg" alt="John Doe" width="270" height="260" />
             <h3 class="our-team">John Doe</h3>
@@ -123,11 +125,12 @@
       </a>
       <address>
         m. Warszawa, Aleje Jerozolimskie 21
-        <ul>
+        <ul class="bottom-mail-tel">
           <li><a class="bottom-mail-tel" href="mailto:info@example.com">info@example.com</a></li>
           <li><a class="bottom-mail-tel" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
       </address>
     </footer>
+    </container>
   </body>
 </html>

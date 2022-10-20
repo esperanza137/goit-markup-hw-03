@@ -10,9 +10,40 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--font-color);
   line-height: 1.14;
+  }
+ 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin-top: 0;
+    }
+ 
+ul {padding-inline-start: 0;}
+/* h1 {margin-top: 0;} */
+
+    .container{
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  /* padding: 0 15px;  */
+  margin: 0 auto;
+  margin-left: 215px;
+  }
+
+.header {
+  display: inline-flex;
+  width: 1600px;
+  height: 80px;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom: 1px solid #ECECEC;
 }
+  
 .logo-link {
   text-decoration: none;
+  margin-left: 215px;
+  margin-right: 93px;
 }
 
 .logo {
@@ -24,7 +55,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
+  }
 
 .logo-web {
   color: var(--selection-color);
@@ -50,6 +81,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--font-color);
   text-decoration: none;
+  list-style-type: none;
+  display: inline-flex;
+  }
+
+  .header-navigation.portfolio {
+  margin-left: 46px;
+  margin-right: 46px;
 }
 
 .header-navigation:hover {
@@ -62,7 +100,10 @@ body {
 .top-mail-tel {
   color: var(--secondary-font-color);
   text-decoration: none;
+  list-style-type: none;
+  display: inline-flex;
 }
+
 .top-mail-tel:hover {
   color: var(--selection-color);
 }
@@ -70,10 +111,12 @@ body {
   color: var(--selection-color);
 }
 
-.email-tel {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+.top-mail-tel.mail{
+  margin-left: 371px;
+  margin-right: 50px;
+}
+.top-mail-tel.tel{
+  margin-right: 227px;
 }
 
 .title {
@@ -91,6 +134,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
 }
 
 .order {
@@ -100,32 +147,69 @@ body {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 41px;
+  margin-left: 700px;
+  margin-bottom: 200px;
+  border-radius: 4px;
 }
 
-.third-title {
-  font-style: normal;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.container-description{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  gap: 10px;
+  padding: 0;
+  margin-left: 215px;
+  list-style: none;
 }
-.description {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-font-color);
-}
+
 .secondary-title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+text-align: center;
+
 }
+.third-title {
+  flex-basis: calc((100% - 30px) / 4);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  }
+  .description {
+    text-transform:none;
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-font-color);
+  }
+  .container-images{
+    display: flex;
+    gap: 30px;
+    /* flex-basis: calc((100% - 30px) / 3); */
+    list-style: none;
+    margin-left: 215px;
+  }
+  .container-our-team{
+    display: flex;
+    margin-left: 215px;
+    gap: 30px;
+    list-style: none;
+
+  }
 .our-team {
+  
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-transform: none;
+  margin-left: 215px;
 }
 .position {
   font-size: 16px;
@@ -153,22 +237,35 @@ a.bottom-mail-tel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
-}
+  }
 .bottom-mail-tel:focus {
   color: var(--selection-color);
 }
 .bottom-mail-tel:hover {
   color: var(--selection-color);
 }
+ul.bottom-mail-tel{list-style-type: none;}
 
 /* Portfolio */
+
+.buttons{
+  list-style-type: none;
+  display: flex;
+  justify-content:center;}
+
+
 .button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-}
+  border-style: none;
+  border-radius: 5px;
+  padding: 6px 22px;
+  margin-right: 8px;}
+
+
 .button:hover {
   background-color: var(--selection-color);
   color: #ffffff;
@@ -176,7 +273,14 @@ a.bottom-mail-tel {
 .button:focus {
   color: var(--selection-color);
 }
+ul.portfolio{
+  list-style-type: none;
+display: inline-flex;
+flex-wrap: wrap;}
 
+.portfolio-item{
+  border: 1px solid #EEEEEE;
+}
 .portfolio-title {
   font-size: 18px;
   line-height: 2;
