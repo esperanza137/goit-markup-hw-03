@@ -4,20 +4,25 @@
   --selection-color: #2196f3;
   --secondary-font-color: #757575;
   --secondary-bacground-color: #2f303a;
+  --third-bacground-color:#F5F4FA;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+  line-height: 1.14;
+  width: 1600px;
 }
 .container {
   display: block;
   width: 100%;
   max-width: 1200px;
   /* padding: 0 15px;  */
-  margin: 0 auto;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--font-color);
-  line-height: 1.14;
+section{
+  margin-bottom: 94px;
   width: 1600px;
+  /* margin-left: 215px; */
 }
 
 *,
@@ -26,7 +31,9 @@ body {
   box-sizing: border-box;
   margin-top: 0;
 }
-
+h3{
+  margin-left: 0;
+}
 ul {
   padding-inline-start: 0;
 }
@@ -38,6 +45,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  margin-bottom: 0;
 }
 
 .logo-link {
@@ -164,15 +172,20 @@ ul {
   gap: 10px;
   padding: 0;
   margin-left: 215px;
-  margin-top: 93px;
   list-style: none;
 }
 
 .secondary-title {
+  display: flex;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 215px;
+}
+.our-team-section h2.secondary-title{
+  padding-top: 94px;
 }
 .third-title {
   flex-basis: calc((100% - 30px) / 4);
@@ -195,6 +208,13 @@ ul {
   list-style: none;
   margin-left: 215px;
 }
+
+.our-team-section{
+  width: 1600px;
+  height: 648px;
+  background-color: var(--third-bacground-color);
+  margin-bottom: 0;
+}
 .container-our-team {
   display: flex;
   margin-left: 215px;
@@ -208,20 +228,31 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-transform: none;
-  margin-left: 215px;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 10px;
 }
 .position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  text-align: center;
+  padding-bottom: 30px;
+}
+.our-team-frame{
+  background: #FFFFFF;
+/* material shadow v1 */
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 footer {
   background-color: var(--secondary-bacground-color);
   width: 1600px;
   height: 252px;
-}
+  padding-top: 60px;
+ }
 
 address {
   font-style: normal;
@@ -230,6 +261,8 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  padding-top:20px;
+  padding-left: 215px;
 }
 
 a.bottom-mail-tel {
