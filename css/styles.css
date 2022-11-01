@@ -11,8 +11,8 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;}
-
+  padding: 0;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -26,7 +26,10 @@ body {
   padding: 0 15px;
 }
 
-h1,h2,h3, button {
+h1,
+h2,
+h3,
+button {
   margin: auto;
 }
 ul {
@@ -137,7 +140,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: center; 
+  text-align: center;
   flex-wrap: wrap;
   max-width: 696px;
   margin-bottom: 30px;
@@ -150,7 +153,7 @@ ul {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -197,7 +200,7 @@ ul {
   /* flex-basis: calc((100% - 30px) / 3); */
   list-style: none;
   margin-bottom: 94px;
-  }
+}
 
 .our-team-section {
   height: 648px;
@@ -241,7 +244,7 @@ ul {
   max-width: 1200px;
   height: 252px;
   padding-top: 60px;
-  }
+}
 
 address {
   font-style: normal;
@@ -278,7 +281,7 @@ ul.bottom-mail-tel {
   border-bottom: 1px solid #ececec;
   text-decoration-line: none;
   margin-bottom: 94px;
-  }
+}
 
 .buttons {
   list-style-type: none;
@@ -314,7 +317,9 @@ ul.portfolio {
   gap: 30px;
   flex-wrap: wrap;
 }
-img{display: block;}
+img {
+  display: block;
+}
 
 .portfolio-item {
   border: 1px solid #eeeeee;
@@ -338,4 +343,4 @@ img{display: block;}
   height: 404px;
   background: #ffffff;
   margin-bottom: 94px;
-  }
+}
