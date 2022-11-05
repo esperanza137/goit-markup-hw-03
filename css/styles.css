@@ -35,14 +35,19 @@ button {
 ul {
   padding-inline-start: 0;
 }
+nav{
+  display: flex;
+  align-items: center;
+ }
 
-.header-index {
+ .header-index {
   display: flex;
   height: 80px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ececec;
   margin-bottom: 0;
+  margi
   text-decoration-line: none;
 }
 
@@ -60,7 +65,6 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /* flex-grow: 1; */
 }
 
 .logo-web {
@@ -82,7 +86,6 @@ ul {
 }
 
 .header-navigation {
-  max-width: 50%;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -92,8 +95,6 @@ ul {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-
-  /* flex-grow: 2; */
 }
 
 .header-navigation:hover {
@@ -110,7 +111,6 @@ ul {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
-  /* flex-grow: 0; */
 }
 
 .top-mail-tel:hover {
