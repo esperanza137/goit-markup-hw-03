@@ -95,7 +95,7 @@ ul {
   padding-block: 32px;
   gap: 2rem;
 }
-.header-navigation{
+.header-navigation {
   letter-spacing: 0.02em;
   color: var(--font-color);
   text-decoration: none;
@@ -104,8 +104,9 @@ ul {
   justify-content: space-around;
 }
 
-.header-navigation>ul{
-margin-left: 93px;}
+.header-navigation > ul {
+  margin-left: 93px;
+}
 
 .header-navigation:hover {
   color: var(--selection-color);
@@ -203,7 +204,6 @@ margin-left: 93px;}
   letter-spacing: 0.03em;
   text-transform: uppercase;
   /* list-style-image: none; */
-
 }
 .container-images {
   display: flex;
