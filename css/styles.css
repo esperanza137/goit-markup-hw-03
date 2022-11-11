@@ -42,7 +42,7 @@ ul {
 
 .header-index {
   border-bottom: 1px solid #ececec;
-  border: 100%;
+  border-width: 100%;
   margin-bottom: 0;
   text-decoration-line: none;
   display: flex;
@@ -216,7 +216,8 @@ ul {
 
 .our-team-section {
   background-color: var(--third-bacground-color);
-  margin-bottom: 94px;
+  width: 100%;
+  padding-bottom: 94px;
 }
 .container-our-team {
   display: flex;
@@ -252,9 +253,8 @@ ul {
 
 .footer-background {
   background-color: var(--secondary-bacground-color);
-  max-width: 1200px;
-  height: 252px;
   padding-top: 60px;
+  padding-bottom: 60px;
   margin-inline: auto;
 }
 
@@ -319,6 +319,7 @@ ul.portfolio {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 94px;
 }
 img {
   display: block;
@@ -342,8 +343,5 @@ img {
   color: var(--secondary-bacground-color);
 }
 .portfolio-cards {
-  width: 370px;
-  height: 404px;
   background: #ffffff;
-  margin-bottom: 94px;
 }
