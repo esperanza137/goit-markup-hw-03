@@ -42,6 +42,7 @@ ul {
 
 .header-index {
   border-bottom: 1px solid #ececec;
+  border: 100%;
   margin-bottom: 0;
   text-decoration-line: none;
   display: flex;
