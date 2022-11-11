@@ -20,7 +20,7 @@ body {
   line-height: 1.14;
 }
 .container {
-  margin: 0 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
   padding: 0 15px;
@@ -46,7 +46,7 @@ ul {
   text-decoration-line: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo-link {
@@ -214,8 +214,7 @@ ul {
 }
 
 .our-team-section {
-  height: 648px;
-  background-color: var(--third-bacground-color);
+ background-color: var(--third-bacground-color);
   margin-bottom: 0;
 }
 .container-our-team {
