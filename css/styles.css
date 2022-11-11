@@ -42,7 +42,6 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
-  border-width: 100%;
 }
 .header-index {
   display: flex;
