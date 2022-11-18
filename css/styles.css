@@ -200,9 +200,10 @@ ul {
   padding-top: 94px;
 }
 .third-title {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 30px) / 4);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  /* list-style-image: none; */
 }
 .third-title>h3 {
   font-size: 14px;
@@ -212,6 +213,7 @@ ul {
 .container-images {
   display: flex;
   gap: 30px;
+  /* flex-basis: calc((100% - 30px) / 3); */
   list-style: none;
   margin-bottom: 94px;
 }
@@ -345,5 +347,5 @@ img {
 }
 .portfolio-cards {
   background: #ffffff;
-  flex-basis: calc((100% - 30px) / 4);
+  flex-basis: calc((100% - 60px) / 3);
 }
